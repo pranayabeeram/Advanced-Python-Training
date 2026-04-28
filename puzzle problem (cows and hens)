@@ -1,0 +1,16 @@
+#a poultory farm has group of hens and cows now task of count of cows and hens separately, if totAL HEADS TOGETHER GIVEN : legs=16, heads = 6, cows = 2, hens =2 case2: legs=7, heads=3, output = no solution
+#TCS prblm-1
+legs = int(input("enter total legs: "))
+heads = int(input("enter total heads: "))
+flag=False
+for cows in range(0,heads+1):
+    hens=heads-cows
+    cal_legs=cows*4 + hens*2
+    if cal_legs==legs:
+        flag=True
+        break
+if flag:
+    print("cows", cows)
+    print("hens", hens)
+else:
+    print("no solution")

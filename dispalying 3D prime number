@@ -1,0 +1,12 @@
+#SEROUS TECHNOLOGY 
+# NESTING LOOPING
+#WRITE A PROGRAM TO DISPLAY A 3D PRIME NUMBER i.number should be 3digits, ii. number should be prime, iii.whole sum should be a prime, iv.
+# dependent loop
+
+for i in range(100, 1000):
+    c=0
+    for j in range(2,i):
+        if i%j==0:
+            c=c+1
+    if c==0:
+        print(i, end=" ")
